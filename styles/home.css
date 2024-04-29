@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-main: #1a1a1a;
+  --clr-second: #141414;
+
+  --clr-text-main: #ffffff;
+  --clr-text-second: rgba(255, 255, 255, 0.6);
+
+  --clr-nav_icon: #7c7c7c;
+  --clr-nav_icon_select: #fff;
+  --clr-accent: #fabc9b;
+  --clr-accent02: #12c971;
+  --clr-accent02_dark: #0f8a51;
+  --clr-link_bg_hover: #444444;
+  --clr-element_bg: #282828;
+  --clr-btn_bg: #444444;
+  --clr-btn_border: #363636;
+}
+
+/* 1440px */
+
+body {
+  padding: 8px;
+  background-color: var(--clr-second);
+  display: flex;
+}
+
+aside {
+  width: 280px;
+  background-color: var(--clr-second);
+}
+
+main {
+  background-color: var(--clr-main);
+}
+
+aside header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#developer-small {
+  height: 90px;
+  width: 90px;
+  margin-top: 40px;
+  margin-bottom: 9px;
+}
+
+#name-small {
+  color: var(--clr-text-main);
+  margin-bottom: 3px;
+  font-size: 1.125rem;
+}
+
+#fun-small {
+  color: var(--clr-text-second);
+  font-size: 0.9rem;
+  margin-bottom: 35px;
+}
+
+#socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.social {
+  height: 32px;
+  width: 32px;
+  fill: var(--clr-nav_icon);
+}
+
+aside nav {
+  padding: 0 23px;
+}
+
+aside nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+aside nav ul li {
+  height: 40px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+aside nav ul li a {
+  color: var(--clr-text-main);
+  text-decoration: none;
+}
+.link {
+  font-size: 0.9rem;
+}
+
+#homepage {
+  background-color: var(--clr-link_bg_hover);
+}
+
+#home-icon {
+  height: 20px;
+  width: 20px;
+  color: var(--clr-text-main);
+}
+
+/* Utility class */
+
+.inter-light {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.inter-semibold {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
