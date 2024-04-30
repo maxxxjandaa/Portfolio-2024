@@ -9,6 +9,7 @@
     <!-- Google Analytics -->
     <!-- Styles -->
     <link rel="stylesheet" href="/styles/home.css" />
+
     <!-- My Scripts -->
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -87,9 +88,14 @@
       <nav>
         <ul>
           <li id="homepage">
-            <a class="inter-medium | link" href="#"
-              ><svg
+            <a
+              class="inter-medium | link"
+              id="homepage-link"
+              href="https://www.youtube.com"
+            >
+              <svg
                 id="home-icon"
+                class="icon-nav"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
@@ -104,18 +110,44 @@
               Homepage</a
             >
           </li>
+
           <li id="projects">
-            <a class="inter-medium | link" href="#">Projects</a>
+            <a id="project-link" class="inter-medium | link" href="#">
+              <ion-icon
+                id="project-icon"
+                class="icon-nav"
+                name="bag-handle-outline"
+              ></ion-icon>
+              Projects</a
+            >
           </li>
-          <li id="about"><a class="inter-medium | link" href="#">About</a></li>
+
+          <li id="about">
+            <a id="about-link" class="inter-medium | link" href="#">
+              <ion-icon
+                id="about-icon"
+                class="icon-nav"
+                name="person-outline"
+              ></ion-icon
+              >About</a
+            >
+          </li>
+
           <li id="contact">
-            <a class="inter-medium | link" href="#">Contact</a>
+            <a id="contact-link" class="inter-medium | link" href="#">
+              <ion-icon
+                id="contact-icon"
+                class="icon-nav"
+                name="mail-outline"
+              ></ion-icon>
+              Contact</a
+            >
           </li>
         </ul>
       </nav>
       <div id="theme">
         <button id="theme-button">
-          <ion-icon id="theme-icon" name="moon"></ion-icon>
+          <ion-icon id="theme-icon" name="sunny-outline"></ion-icon>
         </button>
       </div>
     </aside>
@@ -123,24 +155,31 @@
       <header>
         <div id="availability">
           <div id="dot"></div>
-          <span>Available for work</span>
+          <span class="inter-medium">Available for work</span>
         </div>
-        <h1 id="main-title"></h1>
-        <h2 id="fun"></h2>
-        <div>
-          <img src="" alt="" />
-          <span>Plzeň, Česka republika</span>
+        <h1 class="inter-semibold" id="main-title">Čau! Já jsem Max👏</h1>
+        <h2 class="inter-medium" id="fun">Frontend web developer</h2>
+        <div id="location">
+          <ion-icon id="pointer-icon" name="location-outline"></ion-icon>
+          <span class="inter-regular">Plzeň, Česka republika</span>
         </div>
-        <p>
+        <p class="inter-regular" id="about-info">
           Mám dva roky zkušeností jako webový designer a frontend developer,
           zaměřuji se na vytváření pěkných a snadno použitelných webových
           stránek.
         </p>
-        <div>
-          <button id="about-btn"><a href="#">About</a></button>
+        <div id="btn-wrapp">
+          <a
+            class="inter-medium"
+            id="call-action"
+            href="https://www.youtube.com"
+          >
+            <div id="about-wrapp">About</div>
+          </a>
+
           <button id="copy-btn">
-            <img src="" alt="" />
-            <span>Copy</span>
+            <ion-icon id="copy-icon" name="copy-outline"></ion-icon>
+            <span class="inter-medium">Copy</span>
           </button>
         </div>
       </header>
