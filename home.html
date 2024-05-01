@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/styles/home.css" />
 
     <!-- My Scripts -->
+    <script src="./index.js" defer></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -174,12 +175,21 @@
             id="call-action"
             href="https://www.youtube.com"
           >
-            <div id="about-wrapp">About</div>
+            About
           </a>
 
           <button id="copy-btn">
-            <ion-icon id="copy-icon" name="copy-outline"></ion-icon>
-            <span class="inter-medium">Copy</span>
+            <div id="before-click">
+              <ion-icon id="copy-icon" name="copy-outline"></ion-icon>
+              <span class="inter-medium">Copy email</span>
+            </div>
+
+            <!-- click event -->
+
+            <div id="click">
+              <ion-icon id="copy-icon" name="checkmark-outline"></ion-icon>
+              <span class="inter-medium">Copied</span>
+            </div>
           </button>
         </div>
       </header>
