@@ -211,6 +211,7 @@ main {
 
 main header {
   width: 904px;
+  margin-bottom: 120px;
 }
 
 #availability {
@@ -330,6 +331,97 @@ main header {
   display: none;
   align-items: center;
   transition-duration: 0.5s;
+}
+
+#price-list {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.topics {
+  height: 510px;
+  width: 280px;
+  background-color: var(--clr-element_bg);
+  border-radius: 15px;
+  padding: 18px 22px;
+}
+
+#name-section {
+  grid-area: 1 / 1 / 4 / 4;
+  margin-bottom: 20px;
+  color: var(--clr-text-main);
+  font-size: 1.57rem;
+}
+
+.topic-name {
+  color: var(--clr-text-main);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.stands-for {
+  color: var(--clr-text-second);
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 2.5rem;
+  color: var(--clr-accent);
+  text-align: center;
+  margin-top: 15px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+#first-type::before {
+  content: "Kč";
+  color: var(--clr-accent);
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+#second-type::before {
+  content: "Kč";
+  color: var(--clr-accent);
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+#third-type::before {
+  content: "Kč";
+  color: var(--clr-accent);
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+.parts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.parts li {
+  list-style: none;
+  color: var(--clr-text-main);
+  font-size: 1rem;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 14px;
+  text-align: center;
 }
 /* Utility class */
 
