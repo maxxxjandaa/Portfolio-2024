@@ -1,6 +1,7 @@
 const btn = document.getElementById("copy-btn");
 const wrap = document.getElementById("click");
 const beforeBtn = document.getElementById("before-click");
+const themeBtn = document.getElementById("theme-button");
 
 btn.addEventListener("click", () => {
   const textToCopy = "maxmilian.janda@gmail.com"; // ZmÄ›Ĺte na text, kterĂ˝ chcete zkopĂ­rovat
@@ -26,4 +27,8 @@ btn.addEventListener("click", () => {
       btn.style.backgroundColor = "transparent";
     }, 2500);
   }
+});
+
+themeBtn.addEventListener("click", () => {
+  window.alert("Upssss tato funkce není aktuálně dostupná");
 });

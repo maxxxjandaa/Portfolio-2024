@@ -294,7 +294,7 @@ main header {
 }
 
 #copy-btn {
-  width: 142px;
+  width: 182px;
   border: 1px solid var(--clr-btn_border);
   border-radius: 10px;
   background-color: transparent;
@@ -339,11 +339,11 @@ main header {
   justify-content: space-between;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 25px;
 }
 
 .topics {
   height: 510px;
-  width: 280px;
   background-color: var(--clr-element_bg);
   border-radius: 15px;
   padding: 18px 22px;
@@ -422,6 +422,37 @@ main header {
 
   margin-bottom: 14px;
   text-align: center;
+}
+
+#price-list-second {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sda {
+  color: var(--clr-text-main);
+  margin-bottom: 20px;
+}
+
+#price-list-second div {
+  background-color: var(--clr-element_bg);
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#second-choice-title {
+  color: var(--clr-text-main);
+  font-size: 1.25rem;
+}
+
+#price {
+  color: var(--clr-accent);
 }
 /* Utility class */
 
