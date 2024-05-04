@@ -1,7 +1,10 @@
 const btn = document.getElementById("copy-btn");
 const wrap = document.getElementById("click");
 const beforeBtn = document.getElementById("before-click");
+
 const themeBtn = document.getElementById("theme-button");
+
+const priceMoreBtn = document.getElementById("price-more-btn");
 
 btn.addEventListener("click", () => {
   const textToCopy = "maxmilian.janda@gmail.com"; // ZmÄ›Ĺte na text, kterĂ˝ chcete zkopĂ­rovat
@@ -30,5 +33,9 @@ btn.addEventListener("click", () => {
 });
 
 themeBtn.addEventListener("click", () => {
-  window.alert("Upssss tato funkce není aktuálně dostupná");
+  window.alert("Upssss tato funkce není zatím dostupná");
+});
+
+priceMoreBtn.addEventListener("click", () => {
+  window - alert("Upssss tato funkce není zatím dostupná");
 });
