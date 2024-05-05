@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/styles/home.css" />
 
     <!-- My Scripts -->
-    <script src="./index.js" defer></script>
+    <script src="./js/index.js" defer></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -92,7 +92,8 @@
             <a
               class="inter-medium | link"
               id="homepage-link"
-              href="https://www.youtube.com"
+              href="./index.html"
+              onclick="navigateTo('index.html'); return false;"
             >
               <svg
                 id="home-icon"
@@ -113,7 +114,12 @@
           </li>
 
           <li id="projects">
-            <a id="project-link" class="inter-medium | link" href="#">
+            <a
+              id="project-link"
+              class="inter-medium | link"
+              href="./projects.html"
+              onclick="navigateTo('projects.html'); return false;"
+            >
               <ion-icon
                 id="project-icon"
                 class="icon-nav"
@@ -280,23 +286,20 @@
         <div id="main-wrapp">
           <div class="wrapp-item">
             <div class="child1">
-              <h2 class="inter-regular | sign">Empty</h2>
+              <h2 class="inter-regular | sign">Buďte první</h2>
             </div>
             <div class="child2">
-              <h2 class="inter-regular | sign">Empty</h2>
+              <h2 class="inter-regular | sign">Buďte první</h2>
             </div>
           </div>
           <div class="wrapp-item">
             <div class="child3">
-              <h2 class="inter-regular | sign">Empty</h2>
+              <h2 class="inter-regular | sign">Buďte první</h2>
             </div>
             <div class="child4">
-              <h2 class="inter-regular | sign">Empty</h2>
+              <h2 class="inter-regular | sign">Buďte první</h2>
             </div>
           </div>
-        </div>
-        <div id="moreBtn-wrapp">
-          <button>Více</button>
         </div>
       </section>
       <footer></footer>

@@ -1,0 +1,369 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-main: #1a1a1a;
+  --clr-second: #141414;
+
+  --clr-text-main: #ffffff;
+  --clr-text-second: rgba(255, 255, 255, 0.6);
+
+  --clr-nav_icon: #7c7c7c;
+  --clr-nav_icon_select: #fff;
+  --clr-accent: #fabc9b;
+  --clr-accent02: #12c971;
+  --clr-accent02_dark: rgba(15, 138, 81, 0.21);
+  --clr-link_bg_select: #444444;
+  --clr-link_bg_hover: #4444447c;
+  --clr-element_bg: #282828;
+  --clr-btn_bg: #444444;
+  --clr-btn_border: #363636;
+
+  --time-transformDuration: 0.3s;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #444444;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7c7c7c;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  padding: 8px;
+  background-color: var(--clr-second);
+  display: flex;
+  transition-duration: 0.3s;
+}
+
+aside {
+  width: 19.444444444444%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: var(--clr-second);
+  position: sticky;
+  top: 8px;
+}
+
+main {
+  background-color: var(--clr-main);
+  width: calc(100% - 19.444444444444%);
+}
+
+@media (min-width: 1567px) {
+  main {
+    width: calc(100% - 300px);
+  }
+}
+
+aside header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#developer-small {
+  height: 55px;
+  width: 55px;
+  margin-top: 40px;
+  margin-bottom: 9px;
+}
+
+#name-small {
+  color: var(--clr-text-main);
+  margin-bottom: 3px;
+  font-size: 1rem;
+}
+
+#fun-small {
+  color: var(--clr-text-second);
+  font-size: 0.9rem;
+  margin-bottom: 35px;
+}
+
+#socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.social {
+  height: 32px;
+  width: 32px;
+  fill: var(--clr-nav_icon);
+  transition-duration: 0.3s;
+}
+
+.social:hover {
+  fill: var(--clr-nav_icon_select);
+}
+
+aside nav {
+  padding: 0 23px;
+}
+
+aside nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+aside nav ul li {
+  height: 40px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition-duration: var(--time-transformDuration);
+}
+
+aside nav ul li a {
+  color: var(--clr-text-second);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.9rem;
+  transition-duration: var(--time-transformDuration);
+}
+
+.icon-nav {
+  height: 25px;
+  width: 25px;
+  color: var(--clr-nav_icon);
+  stroke: 5px;
+  margin-left: 10px;
+  margin-right: 14px;
+  transition-duration: var(--time-transformDuration);
+}
+
+#home-icon {
+  fill: var(--clr-nav_icon);
+}
+
+/* Window link */
+#project-icon {
+  color: var(--clr-text-main);
+}
+
+#project-link {
+  color: var(--clr-nav_icon_select);
+}
+
+#projects {
+  background-color: var(--clr-link_bg_select);
+}
+
+/* hover nav */
+#homepage-link:hover #home-icon {
+  fill: var(--clr-nav_icon_select);
+}
+
+#homepage-link {
+  transition: all 0.3s ease-in-out;
+}
+
+#homepage-link:hover {
+  color: var(--clr-text-main);
+}
+
+#homepage:hover {
+  background-color: var(--clr-link_bg_hover);
+}
+
+#project-link:hover #project-icon {
+  color: var(--clr-nav_icon_select);
+}
+
+#project-link:hover {
+  color: var(--clr-text-main);
+}
+
+#projects:hover {
+  background-color: var(--clr-link_bg_select);
+}
+
+#about-link:hover #about-icon {
+  color: var(--clr-nav_icon_select);
+}
+
+#about-link:hover {
+  color: var(--clr-text-main);
+}
+
+#about:hover {
+  background-color: var(--clr-link_bg_hover);
+}
+
+#contact-link:hover #contact-icon {
+  color: var(--clr-nav_icon_select);
+}
+
+#contact-link:hover {
+  color: var(--clr-text-main);
+}
+
+#contact:hover {
+  background-color: var(--clr-link_bg_hover);
+}
+
+#theme {
+  position: absolute;
+  width: 100%;
+
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+#theme-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+  transition-duration: 0.3s;
+}
+
+#theme-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#theme-icon {
+  margin: 5px;
+  height: 25px;
+  width: 25px;
+  color: var(--clr-nav_icon);
+}
+
+main {
+  padding: 120px;
+  border-radius: 10px;
+}
+
+main {
+  background-color: var(--clr-main);
+  width: calc(100% - 19.444444444444%);
+}
+
+@media (min-width: 1567px) {
+  main {
+    width: calc(100% - 300px);
+  }
+}
+
+main header {
+  margin-bottom: 120px;
+}
+
+#main-title {
+  color: var(--clr-text-main);
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+
+#under-title {
+  color: var(--clr-text-second);
+  font-size: 1.125rem;
+}
+
+#project-sect {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 32px;
+  width: 100%;
+  height: 800px;
+}
+
+.img_project {
+  background-color: var(--clr-element_bg);
+  height: 300px;
+  width: 300px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  padding: 20px 10px 10px 20px;
+  cursor: pointer;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.img_project img {
+  transition-duration: 0.5s;
+  height: 100%;
+  width: 100%;
+}
+/* #project_1 {
+  height: 200px;
+  width: 300px;
+} */
+
+.img_project:hover img {
+  transform: scale(1.05);
+}
+
+.item h2 {
+  color: var(--clr-text-main);
+  font-size: 1rem;
+}
+
+.item h4 {
+  color: var(--clr-text-second);
+  font-size: 0.75rem;
+  margin-bottom: 4px;
+}
+
+/* Utility class */
+
+.inter-light {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.inter-semibold {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

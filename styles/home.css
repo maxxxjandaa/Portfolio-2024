@@ -16,12 +16,18 @@
   --clr-accent: #fabc9b;
   --clr-accent02: #12c971;
   --clr-accent02_dark: rgba(15, 138, 81, 0.21);
-  --clr-link_bg_hover: #444444;
+  --clr-link_bg_select: #444444;
+  --clr-link_bg_hover: #4444447c;
   --clr-element_bg: #282828;
   --clr-btn_bg: #444444;
   --clr-btn_border: #363636;
 
   --time-transformDuration: 0.3s;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 /* width */
@@ -49,6 +55,7 @@ body {
   padding: 8px;
   background-color: var(--clr-second);
   display: flex;
+  transition-duration: 0.3s;
 }
 
 aside {
@@ -166,7 +173,7 @@ aside nav ul li a {
 }
 
 #homepage {
-  background-color: var(--clr-link_bg_hover);
+  background-color: var(--clr-link_bg_select);
 }
 
 /* hover nav */

@@ -6,6 +6,16 @@ const themeBtn = document.getElementById("theme-button");
 
 const priceMoreBtn = document.getElementById("price-more-btn");
 
+function navigateTo(url) {
+  // Přidejte třídu na body, která spustí animaci fade-out
+  document.body.classList.add("fade-out");
+
+  // Počkejte 300 milisekund (0.3 sekundy) a přejděte na novou stránku
+  setTimeout(function () {
+    window.location.href = url;
+  }, 300);
+}
+
 btn.addEventListener("click", () => {
   const textToCopy = "maxmilian.janda@gmail.com"; // ZmÄ›Ĺte na text, kterĂ˝ chcete zkopĂ­rovat
 
