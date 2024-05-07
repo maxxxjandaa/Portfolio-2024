@@ -174,7 +174,53 @@
             </button>
           </div>
         </aside>
-        <main></main>
+        <main>
+          <header>
+            <h1 class="inter-semibold" id="main-title">Kontakty</h1>
+            <h2 class="inter-regular" id="subtitle">Kontaktujte mě</h2>
+            <div id="pipe"></div>
+            <div id="wrapp">
+              <span class="inter-regular | item"
+                >maxmilian.janda@gmail.com</span
+              >
+              <span class="inter-regular | item">+420 792 316 172</span>
+              <span class="inter-regular | name-item">E-mail</span>
+              <span class="inter-regular | name-item">Telefon</span>
+            </div>
+            <div>
+              <button></button>
+              <button id="copy-btn">
+                <div id="before-click">
+                  <ion-icon id="copy-icon" name="copy-outline"></ion-icon>
+                  <span class="inter-medium">Zkopírovat email</span>
+                </div>
+
+                <!-- click event -->
+
+                <div id="click">
+                  <ion-icon id="copy-icon" name="checkmark-outline"></ion-icon>
+                  <span class="inter-medium">Zkopírováno</span>
+                </div>
+              </button>
+            </div>
+          </header>
+          <section id="formsec">
+            <h2 class="inter-medium" id="name-sec">Poslat správu</h2>
+            <form class="contact-form" action="contact.html" method="post">
+              <input id="name" type="text" name="name" placeholder="Jméno" />
+              <input id="email" type="email" name="email" placeholder="Email" />
+              <textarea
+                id="message"
+                name="message"
+                id="message"
+                placeholder="Zpráva"
+              ></textarea>
+              <button id="submit" type="submit" name="submit">
+                Poslat zprávu
+              </button>
+            </form>
+          </section>
+        </main>
       </body>
     </html>
   </head>

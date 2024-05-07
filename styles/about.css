@@ -206,7 +206,7 @@ aside nav ul li a {
 }
 
 #projects:hover {
-  background-color: var(--clr-link_bg_select);
+  background-color: var(--clr-link_bg_hover);
 }
 
 #about-link:hover #about-icon {

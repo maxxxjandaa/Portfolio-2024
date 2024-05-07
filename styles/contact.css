@@ -207,7 +207,7 @@ aside nav ul li a {
 }
 
 #projects:hover {
-  background-color: var(--clr-link_bg_select);
+  background-color: var(--clr-link_bg_hover);
 }
 
 #about-link:hover #about-icon {
@@ -219,7 +219,7 @@ aside nav ul li a {
 }
 
 #about:hover {
-  background-color: var(--clr-link_bg_select);
+  background-color: var(--clr-link_bg_hover);
 }
 
 #contact-link:hover #contact-icon {
@@ -282,8 +282,148 @@ main {
 main header {
   display: flex;
   margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
 }
 
+#main-title {
+  color: var(--clr-text-main);
+  font-size: 3rem;
+}
+
+#subtitle {
+  color: var(--clr-text-second);
+  font-size: 1.25rem;
+  margin-bottom: 39px;
+}
+
+#pipe {
+  height: 2px;
+  width: 100%;
+  background-color: var(--clr-btn_border);
+  margin-bottom: 42px;
+}
+
+#wrapp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+}
+
+.item {
+  color: var(--clr-text-main);
+  font-size: 1.125rem;
+}
+
+.name-item {
+  color: var(--clr-text-second);
+  font-size: 0.8rem;
+}
+
+#name-sec {
+  color: var(--clr-text-main);
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template: "name email" "message message" "button button";
+  gap: 20px;
+}
+
+input {
+  background-color: var(--clr-element_bg);
+  border-radius: 10px;
+  border: none;
+  height: 60px;
+  color: var(--clr-text-main);
+  padding: 0 20px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--clr-text-second);
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+
+textarea {
+  height: 160px;
+  border: none;
+  background-color: var(--clr-element_bg);
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--clr-text-main);
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  resize: none;
+}
+
+textarea::placeholder {
+  color: var(--clr-text-second);
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+
+#name {
+  grid-area: name;
+}
+
+#email {
+  grid-area: email;
+}
+
+#message {
+  grid-area: message;
+}
+
+#submit {
+  grid-area: button;
+}
+
+button {
+  height: 60px;
+  background-color: var(--clr-accent02);
+  color: var(--clr-text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#copy-btn {
+  width: 182px;
+  border: 1px solid var(--clr-btn_border);
+  border-radius: 10px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+#before-click {
+  display: flex;
+  align-items: center;
+  transition-duration: 0.5s;
+}
 /* Utility class */
 
 .inter-light {
