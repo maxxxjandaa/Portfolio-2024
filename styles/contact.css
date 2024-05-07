@@ -392,19 +392,27 @@ textarea::placeholder {
   grid-area: button;
 }
 
-button {
-  height: 60px;
-  background-color: var(--clr-accent02);
+#btn-wrapp {
+  display: flex;
+  height: 44px;
+  margin-top: 40px;
+}
+
+#call-action {
+  padding: 15px 25px;
+  background-color: var(--clr-btn_border);
+  border-radius: 10px;
   color: var(--clr-text-main);
+  text-decoration: none;
+  margin-right: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
-  font-size: 1.125rem;
-  font-weight: 600;
-  font-family: "Inter", sans-serif;
-  cursor: pointer;
-  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+
+#call-action:hover {
+  background-color: var(--clr-btn_bg);
 }
 
 #copy-btn {
@@ -424,6 +432,41 @@ button {
   align-items: center;
   transition-duration: 0.5s;
 }
+
+#copy-btn:hover {
+  border: 1px solid var(--clr-btn_bg);
+}
+
+#copy-btn span {
+  color: var(--clr-text-main);
+  font-size: 0.9rem;
+}
+
+#copy-icon {
+  color: var(--clr-nav_icon);
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+
+#click {
+  display: none;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+
+#submit {
+  background-color: var(--clr-accent02);
+  color: var(--clr-text-main);
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  border: none;
+  border-radius: 10px;
+  height: 60px;
+  cursor: pointer;
+}
+
 /* Utility class */
 
 .inter-light {

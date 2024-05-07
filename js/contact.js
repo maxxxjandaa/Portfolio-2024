@@ -1,3 +1,7 @@
+const btn = document.getElementById("copy-btn");
+const wrap = document.getElementById("click");
+const beforeBtn = document.getElementById("before-click");
+
 function navigateTo(url) {
   // Přidejte třídu na body, která spustí animaci fade-out
   document.body.classList.add("fade-out");
