@@ -451,7 +451,7 @@ main header {
   font-size: 0.8rem;
   position: absolute;
   top: 0;
-  left: 33%;
+  left: 30px;
 }
 #second-type::before {
   content: "Kč";
@@ -459,7 +459,7 @@ main header {
   font-size: 0.8rem;
   position: absolute;
   top: 0;
-  left: 32%;
+  left: 30px;
 }
 #third-type::before {
   content: "Kč";
@@ -467,7 +467,7 @@ main header {
   font-size: 0.8rem;
   position: absolute;
   top: 0;
-  left: 32%;
+  left: 30px;
 }
 .parts {
   width: 100%;
