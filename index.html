@@ -28,6 +28,9 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <!-- Animace -->
+    <link rel="stylesheet" href="/styles/animation.css" />
+    <script defer src="./js/animation.js"></script>
   </head>
   <body>
     <aside>
@@ -179,7 +182,11 @@
           <span class="inter-medium">Dostupný pro práci</span>
         </div>
         <h1 class="inter-semibold" id="main-title">Čau! Já jsem Max👏</h1>
-        <h2 class="inter-medium" id="fun">Frontendový webový vývojář</h2>
+        <div id="text-area">
+          <h2 class="inter-medium | change-text" id="fun">
+            Frontendový webový vývojář
+          </h2>
+        </div>
         <div id="location">
           <ion-icon id="pointer-icon" name="location-outline"></ion-icon>
           <span class="inter-regular">Plzeň, Česka republika</span>
@@ -214,7 +221,7 @@
           </button>
         </div>
       </header>
-      <section id="price-list">
+      <section class="hidden" id="price-list">
         <div id="name-wrapp">
           <h2 id="name-section" class="inter-medium">Ceník</h2>
           <button id="price-more-btn">
@@ -294,7 +301,7 @@
         </div>
       </section>
 
-      <section id="reviewed-section">
+      <section class="hidden" id="reviewed-section">
         <div id="name-wrapp">
           <h2 id="name-section" class="inter-medium">Recenze</h2>
         </div>
@@ -317,7 +324,6 @@
           </div>
         </div>
       </section>
-      <footer></footer>
     </main>
   </body>
 </html>

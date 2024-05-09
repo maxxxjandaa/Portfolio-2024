@@ -31,6 +31,9 @@
           nomodule
           src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
         ></script>
+        <!-- Animace -->
+        <link rel="stylesheet" href="/styles/animation.css" />
+        <script defer src="./js/animation.js"></script>
       </head>
       <body>
         <aside>
@@ -212,7 +215,7 @@
               </button>
             </div>
           </header>
-          <section id="formsec">
+          <section class="hidden" id="formsec">
             <h2 class="inter-medium" id="name-sec">Poslat správu</h2>
             <form class="contact-form" action="contact.html" method="post">
               <input id="name" type="text" name="name" placeholder="Jméno" />

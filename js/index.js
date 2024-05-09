@@ -6,6 +6,23 @@ const themeBtn = document.getElementById("theme-button");
 
 const priceMoreBtn = document.getElementById("price-more-btn");
 
+let firstText = document.querySelector(".change-text");
+let text_array = ["Frontendový webový vývojář", "Webový designer"];
+let i = 0;
+setInterval(() => {
+  change_text();
+}, 2500);
+
+function change_text() {
+  i++;
+
+  firstText.innerHTML = text_array[i - 1];
+
+  if (i == text_array.length) {
+    i = 0;
+  }
+}
+
 function navigateTo(url) {
   // Přidejte třídu na body, která spustí animaci fade-out
   document.body.classList.add("fade-out");
