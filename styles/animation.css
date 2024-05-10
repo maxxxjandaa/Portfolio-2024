@@ -8,3 +8,12 @@
   transform: translateY(0px);
   transition-duration: 1s;
 }
+
+.doDoIt {
+  opacity: 0;
+}
+
+.doIt {
+  opacity: 1;
+  transition-duration: 1s;
+}
