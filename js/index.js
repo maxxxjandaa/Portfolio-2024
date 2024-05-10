@@ -6,19 +6,22 @@ const themeBtn = document.getElementById("theme-button");
 
 const priceMoreBtn = document.getElementById("price-more-btn");
 
-let firstText = document.querySelector(".change-text");
-let text_array = ["Frontendový webový vývojář", "Webový designer"];
+const firstText = document.querySelector(".change-text");
+const secondText = document.querySelector("#fun02");
 let i = 0;
+secondText.style.opacity = 0;
+
 setInterval(() => {
-  change_text();
-}, 2500);
+  changeText();
+}, 3000);
 
-function change_text() {
-  i++;
-
-  firstText.innerHTML = text_array[i - 1];
-
-  if (i == text_array.length) {
+function changeText() {
+  if (i == 0) {
+    firstText.style.opacity = 1;
+    i++;
+  } else if (i == 1) {
+    firstText.style.opacity = 0;
+    secondText.style.opacity = 1;
     i = 0;
   }
 }
