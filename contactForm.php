@@ -1,15 +1,21 @@
+
 <?php
 
 if(isset($_POST["submit"])){
     $name = $_POST["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
+    
 
-    $mailTo = "maxmilian.janda@gmail.com";
+    $mailTo = "info@maxjanda.cz";
     $headers = "From: " . $email;
-    $txt = "Máš tady email od " . $name . ".\n\n" . $message;
+    $txt = "New email from  " . $name ;
 
     mail($mailTo, $txt, $headers);
 
     header("Location: contact.php?mailsend");
+    
+    
 }
+
+

@@ -37,7 +37,7 @@ function navigateTo(url) {
 }
 
 btn.addEventListener("click", () => {
-  const textToCopy = "maxmilian.janda@gmail.com"; // ZmÄ›Ĺte na text, kterĂ˝ chcete zkopĂ­rovat
+  const textToCopy = "info@maxjanda.cz"; // ZmÄ›Ĺte na text, kterĂ˝ chcete zkopĂ­rovat
 
   navigator.clipboard
     .writeText(textToCopy)

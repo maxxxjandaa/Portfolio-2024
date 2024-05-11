@@ -2,6 +2,8 @@ const btn = document.getElementById("copy-btn");
 const wrap = document.getElementById("click");
 const beforeBtn = document.getElementById("before-click");
 
+const submitBtn = document.getElementById("submit");
+
 function navigateTo(url) {
   // Přidejte třídu na body, která spustí animaci fade-out
   document.body.classList.add("fade-out");
@@ -19,7 +21,7 @@ themeBtn.addEventListener("click", () => {
 });
 
 btn.addEventListener("click", () => {
-  const textToCopy = "maxmilian.janda@gmail.com"; // ZmÄ›Ĺte na text, kterĂ˝ chcete zkopĂ­rovat
+  const textToCopy = "info@maxjanda.cz"; // ZmÄ›Ĺte na text, kterĂ˝ chcete zkopĂ­rovat
 
   navigator.clipboard
     .writeText(textToCopy)
