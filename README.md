@@ -1,2 +1,2 @@
-#Moje portfolio 
-**Maxmilián Janda 
+# Moje portfolio 
+_ _Maxmilián Janda_ _
