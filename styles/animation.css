@@ -1,3 +1,24 @@
+:root {
+  --clr-main: #1a1a1a;
+  --clr-second: #141414;
+
+  --clr-text-main: #ffffff;
+  --clr-text-second: rgba(255, 255, 255, 0.6);
+
+  --clr-nav_icon: #7c7c7c;
+  --clr-nav_icon_select: #fff;
+  --clr-accent: #fabc9b;
+  --clr-accent02: #12c971;
+  --clr-accent02_dark: rgba(15, 138, 81, 0.21);
+  --clr-link_bg_select: #444444;
+  --clr-link_bg_hover: #4444447c;
+  --clr-element_bg: #282828;
+  --clr-btn_bg: #444444;
+  --clr-btn_border: #363636;
+
+  --time-transformDuration: 0.3s;
+}
+
 .hidden {
   opacity: 0;
   transform: translateY(30px);
@@ -16,4 +37,9 @@
 .doIt {
   opacity: 1;
   transition-duration: 1s;
+}
+
+::selection {
+  color: var(--clr-accent02);
+  background-color: var(--clr-btn_border);
 }
