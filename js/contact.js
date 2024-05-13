@@ -4,6 +4,16 @@ const beforeBtn = document.getElementById("before-click");
 
 const submitBtn = document.getElementById("submit");
 
+// Mobile
+
+const mobileNavBtn = document.getElementById("btn-mobile-navBtn");
+const navMobile = document.querySelector(".header-nav");
+const ulNav = document.querySelector(".mobile-nav-ul");
+const menuIconOpen = document.querySelector(".menu-icon-open");
+const menuIconClose = document.querySelector(".menu-icon-close");
+
+const themeBtnMobile = document.getElementById("btn-mobile-theme");
+
 function navigateTo(url) {
   // Přidejte třídu na body, která spustí animaci fade-out
   document.body.classList.add("fade-out");
@@ -44,4 +54,16 @@ btn.addEventListener("click", () => {
       btn.style.backgroundColor = "transparent";
     }, 2500);
   }
+});
+
+// Mobile section
+
+mobileNavBtn.addEventListener("click", () => {
+  navMobile.classList.toggle("showNavMobile");
+  menuIconClose.classList.toggle("menuiconclose");
+  menuIconOpen.classList.toggle("menuiconopen");
+});
+
+themeBtnMobile.addEventListener("click", () => {
+  window.alert("Upssss tato funkce není zatím dostupná");
 });
