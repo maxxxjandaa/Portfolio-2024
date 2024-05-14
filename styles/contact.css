@@ -3143,7 +3143,7 @@ textarea::placeholder {
   #project-icon-mobile {
     height: 25px;
     width: 25px;
-    color: var(--clr-nav_icon_select);
+    color: var(--clr-nav_icon);
     stroke: 5px;
     margin-left: 10px;
     margin-right: 14px;
@@ -3161,10 +3161,6 @@ textarea::placeholder {
   #mobile-project {
     background-color: transparent;
     color: var(--clr-text-second);
-  }
-
-  #project-icon-mobile {
-    color: var(--clr-nav_icon);
   }
 
   #mobile-homepage:hover #mobile-icon-homepage,
@@ -3187,7 +3183,7 @@ textarea::placeholder {
 
   #mobile-project:hover,
   #mobile-project:active {
-    background-color: var(--clr-link_bg_hover);
+    background-color: var(--clr-link_bg_select);
     color: var(--clr-text-main);
   }
 
@@ -3206,21 +3202,22 @@ textarea::placeholder {
 
   /* Contact */
 
+  #contact-icon-mobile {
+    color: var(--clr-nav_icon_select);
+  }
+
   #mobile-contact:hover #contact-icon-mobile,
   #mobile-contact:active #contact-icon-mobile {
     color: var(--clr-nav_icon_select);
   }
 
-  #mobile-contact {
+  #mobile-contact:hover,
+  #mobile-contact:active {
     background-color: var(--clr-link_bg_select);
     color: var(--clr-text-main);
   }
 
-  #contact-icon-mobile {
-    color: var(--clr-nav_icon_select);
-  }
-  #mobile-contact:hover,
-  #mobile-contact:active {
+  #mobile-contact {
     background-color: var(--clr-link_bg_select);
     color: var(--clr-text-main);
   }
@@ -3423,13 +3420,61 @@ textarea::placeholder {
   }
 
   #main-title {
-    font-size: 2rem;
+    color: var(--clr-text-main);
+    font-size: 2.5rem;
+    margin-bottom: 5px;
   }
 
-  #wrapp {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  #under-title {
+    color: var(--clr-text-second);
+    font-size: 1.125rem;
+    line-height: 1.5em;
+  }
+
+  #project-sect {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    width: 100%;
+    height: auto;
+  }
+
+  .img_project {
+    background-color: var(--clr-element_bg);
+    height: auto;
+    width: auto;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 20px 10px 10px 20px;
+    cursor: pointer;
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .img_project img {
+    transition-duration: 0.5s;
+    height: 100%;
+    width: 100%;
+  }
+  /* #project_1 {
+    height: 200px;
+    width: 300px;
+  } */
+
+  .img_project:hover img {
+    transform: scale(1.05);
+  }
+
+  .item h2 {
+    color: var(--clr-text-main);
+    font-size: 1rem;
+  }
+
+  .item h4 {
+    color: var(--clr-text-second);
+    font-size: 0.75rem;
+    margin-bottom: 4px;
   }
 }
 
