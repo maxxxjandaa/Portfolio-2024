@@ -3419,62 +3419,102 @@ textarea::placeholder {
     margin-top: 60px;
   }
 
-  #main-title {
-    color: var(--clr-text-main);
-    font-size: 2.5rem;
-    margin-bottom: 5px;
-  }
-
-  #under-title {
-    color: var(--clr-text-second);
-    font-size: 1.125rem;
-    line-height: 1.5em;
-  }
-
-  #project-sect {
+  form {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 32px;
-    width: 100%;
-    height: auto;
+    grid-template:
+      "name"
+      "email"
+      "message"
+      "button";
+    gap: 20px;
   }
 
-  .img_project {
+  input {
     background-color: var(--clr-element_bg);
-    height: auto;
-    width: auto;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    padding: 20px 10px 10px 20px;
-    cursor: pointer;
-    overflow: hidden;
-    object-fit: contain;
+    border-radius: 10px;
+    border: none;
+    height: 60px;
+    color: var(--clr-text-main);
+    padding: 0 20px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    outline: none;
   }
 
-  .img_project img {
-    transition-duration: 0.5s;
-    height: 100%;
+  input::placeholder {
+    color: var(--clr-text-second);
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+  }
+
+  textarea {
+    height: 160px;
+    border: none;
+    background-color: var(--clr-element_bg);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--clr-text-main);
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    outline: none;
+    resize: none;
+  }
+
+  textarea::placeholder {
+    color: var(--clr-text-second);
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+  }
+
+  #name {
+    grid-area: name;
+  }
+
+  #email {
+    grid-area: email;
+  }
+
+  #message {
+    grid-area: message;
+  }
+
+  #submit {
+    grid-area: button;
+  }
+
+  #btn-wrapp a {
     width: 100%;
   }
-  /* #project_1 {
-    height: 200px;
-    width: 300px;
-  } */
 
-  .img_project:hover img {
-    transform: scale(1.05);
+  #btn-wrapp div {
+    height: 44px;
   }
 
-  .item h2 {
-    color: var(--clr-text-main);
-    font-size: 1rem;
+  #btn-wrapp {
+    display: flex;
+    flex-direction: column;
+    height: 44px;
+    margin-top: 40px;
+    gap: 6px;
   }
 
-  .item h4 {
-    color: var(--clr-text-second);
-    font-size: 0.75rem;
-    margin-bottom: 4px;
+  #copy-btn {
+    width: auto;
+    height: 44px;
+    border: 1px solid var(--clr-btn_border);
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 0.3s;
   }
 }
 
