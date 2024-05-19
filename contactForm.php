@@ -8,10 +8,10 @@ if(isset($_POST["submit"])){
     
 
     $mailTo = "info@maxjanda.cz";
-    $headers = "From: " . $email;
-    $txt = "New email from  " . $name ;
+    $headers = "From: " . $name . " | " . "Email: " . $email;
+    $txt = $message;
 
-    mail($mailTo, $txt, $headers);
+    mail($mailTo, $headers,  $txt);
 
     header("Location: contact.php?mailsend");
     
