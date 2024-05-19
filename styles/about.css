@@ -982,7 +982,7 @@ aside nav ul li a {
 }
 
 #homepage-link {
-  color: var(--clr-nav_icon_select);
+  color: var(--clr-text-second);
 }
 
 #homepage {
@@ -994,7 +994,7 @@ aside nav ul li a {
 }
 
 #project-link {
-  color: var(--clr-nav_icon_select);
+  color: var(--clr-text-second);
 }
 
 #projects {
@@ -1258,7 +1258,7 @@ main header {
   }
 
   #homepage-link {
-    color: var(--clr-nav_icon_select);
+    color: var(--clr-text-second);
   }
 
   #homepage {
@@ -1270,7 +1270,7 @@ main header {
   }
 
   #project-link {
-    color: var(--clr-nav_icon_select);
+    color: var(--clr-text-second);
   }
 
   #projects {
